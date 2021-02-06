@@ -19,8 +19,8 @@ app.get('/muestra-imagem', (req, res)=>{
     res.sendFile(__dirname + '/js.png')
 })
 
-app.get('/about', (req, res)=>{
-    res.send('about')
+app.get('/heroku', (req, res)=>{
+    res.send('ta rodando heroku!!!!')
 })
 
 app.get('/habilidades', (req, res) =>{
@@ -31,16 +31,6 @@ app.get('/new', (req, res)=>{
     res.send('nueva rota!!!!')
 })
 app.listen(process.env.PORT ||3000)
-
-
-
-
-
-
-
-
-
-
 
 
 
