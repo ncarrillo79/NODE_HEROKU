@@ -10,9 +10,9 @@ const app = express()
     
 //})
 
-app.use(function (req, res) {
+app.get('/' , (req, res)=>{
    
-    res.sendFile(__dirname + '/miPagina.html')
+   res.sendFile(__dirname + '/miPagina.html')
 })
 
 app.get('/muestra-imagem', (req, res)=>{
